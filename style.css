@@ -82,34 +82,15 @@ body {
     height: 3px;
     background-color: #d72660;
 } /* აქ მთავრდება 1 დივი */
-
-.about .container {
+.about-section {
     display: flex;
     justify-content: space-between;
     padding: 50px;
+    background: rgb(254, 252, 252);
 }
-
 .about-left {
-    flex: 1;
+    width: 40%;
 }
-
-.about-left h1 {
-    font-size: 32px;
-    font-weight: bold;
-}
-
-.job-title {
-    color: orange;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.description {
-    color: #555;
-    max-width: 300px;
-    margin-bottom: 30px;
-}
-
 .hire-btn {
     background-color: #f8495f;
     color: white;
@@ -118,116 +99,77 @@ body {
     font-size: 16px;
     cursor: pointer;
 }
-
-.about-right {
-    flex: 1;
-    max-width: 400px;
-}
-
-.skill {
-    margin-bottom: 20px;
-}
-
-.skill p {
-    margin: 0 0 5px;
-    font-weight: bold;
-    color: #444;
-}
-
-.skill span {
-    color: #f8495f;
-}
-
-.bar {
-    width: 100%;
-    height: 6px;
-    background-color: #eee;
-    border-radius: 3px;
-}
-
-.fill {
-    height: 100%;
-    background-color: #f8495f;
-    border-radius: 3px;
-}
-
-.fill-80 {
-    width: 80%;
-}
-.fill-65 {
-    width: 65%;
-}
-.fill-50 {
-    width: 50%;
-}
-.fill-30 {
-    width: 30%;
-}
-.about-section {
-    display: flex;
-    justify-content: space-between;
-    padding: 50px;
-    background: white;
-}
-
-.about-left {
-    width: 40%;
-}
-
-.about-left h1 {
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.about-left h3 {
-    color: orange;
-    font-weight: 500;
-}
-
-.about-left p {
-    color: #666;
-    line-height: 1.6;
-}
-
-.hire-btn {
-    margin-top: 20px;
-    background-color: #f8485e;
-    color: white;
-    padding: 10px 25px;
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
-}
-
 .about-image {
     width: 30%;
-    background-color: #444;
+    background-image: url("images/n1.jpg");
+    background-size: cover;
+    background-position: center;
     height: 300px;
 }
 .skills-section {
     width: 25%;
 }
-
 .skill {
     margin-bottom: 20px;
 }
-
-.skill span {
-    font-weight: bold;
-}
-
 .progress-bar {
     background: #eee;
     height: 6px;
     border-radius: 4px;
     overflow: hidden;
 }
-
 .progress-bar-fill {
     height: 100%;
     background: #f8485e;
     width: 0;
     transition: width 1s ease-in-out;
+}
+.skill span {
+        color: #f8495f;
+    }
+.about-left h1 {
+    font-size: 28px;
+    font-weight: bold;
+    }
+.about-left h3 {
+    color: orange;
+    font-weight: 500;
+    }
+.about-left p {
+    color: #666;
+    line-height: 1.6;
+    }
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill span {
+    font-weight: bold;
+}
+/*აქ მთავრდება მეორე დივი */
+    .job-title {
+        color: orange;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .description {
+        color: #555;
+        max-width: 300px;
+        margin-bottom: 30px;
+    }
+
+    
+
+    
+
+   
+
+ 
+
+    
+
+    
 } /*აქ მთავრდება მეორე დივი*/
 .contact-info {
     display: flex;
