@@ -125,20 +125,20 @@ body {
     transition: width 1s ease-in-out;
 }
 .skill span {
-        color: #f8495f;
-    }
+    color: #f8495f;
+}
 .about-left h1 {
     font-size: 28px;
     font-weight: bold;
-    }
+}
 .about-left h3 {
     color: orange;
     font-weight: 500;
-    }
+}
 .about-left p {
     color: #666;
     line-height: 1.6;
-    }
+}
 .skill {
     margin-bottom: 20px;
 }
@@ -148,60 +148,9 @@ body {
 }
 /*აქ მთავრდება მეორე დივი */
 .contact-info {
-  display: flex;
-  justify-content: space-around;
-  background-color: #0d1436;
-  color: white;
-  padding: 50px 0;
-  text-align: center;
-}
-
-.contact-item {
-  max-width: 250px;
-}
-.icon-circle {
-  width: 60px;
-  height: 60px;
-  border: 2px dashed white;
-  border-radius: 50%;
-  margin: 0 auto 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
-}
-.icon-circle.red {
-  background-color: #f8485e;
-  border: none;
-  color: white;
-}
-.contact-item h3 {
-  margin: 10px 0 5px;
-  font-weight: 600;
-}
-.contact-item p {
-  color: #b0b0b0;
-  font-size: 14px;
-  line-height: 1.5;
-}
-
-
-    
-
-    
-
-   
-
- 
-
-    
-
-    
-} /*აქ მთავრდება მეორე დივი*/
-.contact-info {
     display: flex;
     justify-content: space-around;
-    background-color: #0d1436; /* მუქი ლურჯი ფონი */
+    background-color: #0d1436;
     color: white;
     padding: 50px 0;
     text-align: center;
@@ -210,7 +159,6 @@ body {
 .contact-item {
     max-width: 250px;
 }
-
 .icon-circle {
     width: 60px;
     height: 60px;
@@ -222,23 +170,21 @@ body {
     justify-content: center;
     font-size: 20px;
 }
-
 .icon-circle.red {
     background-color: #f8485e;
     border: none;
     color: white;
 }
-
 .contact-item h3 {
     margin: 10px 0 5px;
     font-weight: 600;
 }
-
 .contact-item p {
     color: #b0b0b0;
     font-size: 14px;
     line-height: 1.5;
 } /*აქ მთავრდება მესამე დივი*/
+
 .services-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -246,7 +192,6 @@ body {
     padding: 50px;
     background-color: #f5f5f5;
 }
-
 .service-card {
     background-color: #f5f5f5;
     padding: 40px 20px;
@@ -256,23 +201,19 @@ body {
     font-family: sans-serif;
     color: #1a1a1a;
 }
-
 .service-card i {
     font-size: 30px;
     color: #0d1436;
     margin-bottom: 15px;
 }
-
 .service-card h4 {
     margin-bottom: 10px;
     font-size: 16px;
 }
-
 .service-card.active {
     background-color: #0d1436;
     color: white;
 }
-
 .service-card.active p {
     font-size: 14px;
     line-height: 1.5;
