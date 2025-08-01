@@ -4,6 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
         <link rel="stylesheet" href="style.css" />
+        <script src="script.js"></script>
     </head>
     <body>
         <div class="container">
@@ -49,7 +50,7 @@
                     <div class="skills-section">
                         <div class="skill">
                             <span>Design (80%)</span>
-                            <div class="progress-bar">
+                            <div class="progress-bar-fill" data-width="80%">
                                 <div
                                     class="progress-bar-fill"
                                     style="width: 80%"
@@ -61,7 +62,7 @@
                             <div class="progress-bar">
                                 <div
                                     class="progress-bar-fill"
-                                    style="width: 65%"
+                                    data-width="80%"
                                 ></div>
                             </div>
                         </div>
@@ -70,17 +71,16 @@
                             <div class="progress-bar">
                                 <div
                                     class="progress-bar-fill"
-                                    style="width: 50%"
+                                    data-width="80%"
                                 ></div>
                             </div>
                         </div>
                         <div class="skill">
                             <span>Photoshop (30%)</span>
                             <div class="progress-bar">
-                                <div
-                                    class="progress-bar-fill"
-                                    style="width: 30%"
-                                ></div>
+                                <div class="progress-bar-fill" data-width="80%">
+                                    >
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -118,7 +118,6 @@
                         sed do possimus magm maiores. Ipsa dolor
                     </p>
                 </div>
-
                 <div class="service-card">
                     <i class="fas fa-cog"></i>
                     <h4>Best Service</h4>
@@ -127,7 +126,6 @@
                         sed do possimus magm maiores. Ipsa dolor
                     </p>
                 </div>
-
                 <div class="service-card active">
                     <h4>Best Service</h4>
                     <p>
@@ -135,7 +133,6 @@
                         sed do possimus magm maiores. Ipsa dolor
                     </p>
                 </div>
-
                 <div class="service-card">
                     <i class="fas fa-crosshairs"></i>
                     <h4>Pixel Perfect</h4>
@@ -144,7 +141,6 @@
                         sed do possimus magm maiores. Ipsa dolor
                     </p>
                 </div>
-
                 <div class="service-card">
                     <i class="fas fa-lightbulb"></i>
                     <h4>Unique Ideas</h4>
@@ -153,7 +149,6 @@
                         sed do possimus magm maiores. Ipsa dolor
                     </p>
                 </div>
-
                 <div class="service-card">
                     <i class="fas fa-chart-line"></i>
                     <h4>Design Analysis</h4>
@@ -162,7 +157,6 @@
                         sed do possimus magm maiores. Ipsa dolor
                     </p>
                 </div>
-
                 <div class="service-card">
                     <i class="fas fa-tasks"></i>
                     <h4>Fully Managed</h4>
@@ -171,7 +165,6 @@
                         sed do possimus magm maiores. Ipsa dolor
                     </p>
                 </div>
-
                 <div class="service-card">
                     <i class="fas fa-life-ring"></i>
                     <h4>Helpful Support</h4>
@@ -179,6 +172,160 @@
                         Lorem ipsum dolor amet, consecte adipiscing lit. Sunt
                         sed do possimus magm maiores. Ipsa dolor
                     </p>
+                </div>
+            </section>
+            <section class="testimonial-section">
+                <div class="testimonial-content">
+                    <p class="testimonial-quote">
+                        Excepteur sint occaecat cupidatat non proident, sunt in
+                        culpa qui officia deserunt mollit anim id est laborum.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        sed do eiusmod tempor incididunt ut labore.
+                    </p>
+                    <div class="testimonial-person">
+                        <div class="circle-photo"></div>
+                        <div class="person-info">
+                            <span class="position">Graphic Designer</span>
+                            <h3>Mau Thomas</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="projects">
+                <h2>Latest Projects</h2>
+                <div class="projects-container">
+                    <ul class="projects-menu">
+                        <li>All</li>
+                        <li>Work ideas</li>
+                        <li class="active">Mockup</li>
+                        <li>PSD Design</li>
+                        <li>Logo</li>
+                        <li>Presentation</li>
+                        <li>Icons</li>
+                    </ul>
+                    <div class="projects-grid">
+                        <div class="project-box">
+                            <div class="overlay">
+                                <p>9 MONTHS AGO</p>
+                                <h3>3D Mockup Design</h3>
+                            </div>
+                        </div>
+                        <div class="project-box">
+                            <div class="overlay">
+                                <p>7 MONTHS AGO</p>
+                                <h3>App UI Concept</h3>
+                            </div>
+                        </div>
+                        <div class="project-box">
+                            <div class="overlay">
+                                <p>6 MONTHS AGO</p>
+                                <h3>Website Template</h3>
+                            </div>
+                        </div>
+                        <div class="project-box">
+                            <div class="overlay">
+                                <p>5 MONTHS AGO</p>
+                                <h3>Creative Logo</h3>
+                            </div>
+                        </div>
+                        <div class="project-box">
+                            <div class="overlay">
+                                <p>4 MONTHS AGO</p>
+                                <h3>PSD Presentation</h3>
+                            </div>
+                        </div>
+                        <div class="project-box">
+                            <div class="overlay">
+                                <p>2 MONTHS AGO</p>
+                                <h3>3D Icon Set</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="timeline">
+                    <div class="section">
+                        <div class="year">2011 - 2</div>
+                        <div class="content">
+                            <h5>IN FREELANCING COMPANY</h5>
+                            <h2>Graphic Designer</h2>
+                            <p>
+                                Excepteur sint occaecat cupidatat non proident,
+                                sunt in culpa qui officia deserunt mollit anim
+                                id est laborum.
+                            </p>
+                            <a href="#">READ MORE</a>
+                            <div class="label">300S</div>
+                        </div>
+                        <div class="section alt">
+                            <div class="year">201</div>
+                            <div class="content">
+                                <div class="icon">&#128187;</div>
+                                <h5>IN FREELANCING COMPANY</h5>
+                                <h2>Application Design</h2>
+                                <p>
+                                    Excepteur sint occaecat cupidatat non
+                                    proident, sunt in culpa qui officia deserunt
+                                    mollit anim id est laborum.
+                                </p>
+                                <a href="#">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="team-section">
+                <p class="subheading">NEWS & EVENT</p>
+                <h1 class="title">Rosa Team</h1>
+                <div class="client-grid">
+                    <div class="client"></div>
+                    <div class="client client-text">
+                        <h4>CLIENT 2</h4>
+                        <p>
+                            Lorem ipsum dolor amet consectetur maiores. Ipsa
+                            dolor sit magnam maiores.
+                        </p>
+                    </div>
+                    <div class="client"></div>
+                    <div class="client"></div>
+                    <div class="client"></div>
+                </div>
+            </section>
+            <section class="contact-section">
+                <div class="overlay"></div>
+                <div class="contact-content">
+                    <h1>CONTACT US</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    </p>
+                    <form class="contact-form">
+                        <div class="form-row">
+                            <input
+                                type="text"
+                                placeholder="Your Name*"
+                                required
+                            />
+                            <input
+                                type="email"
+                                placeholder="Email Address"
+                                required
+                            />
+                            <input
+                                type="url"
+                                placeholder="Your Website*"
+                                required
+                            />
+                        </div>
+                        <textarea
+                            placeholder="Message*"
+                            rows="5"
+                            required
+                        ></textarea>
+                        <button type="submit">
+                            SEND MESSAGE <span>&#x27A4;</span>
+                        </button>
+                    </form>
                 </div>
             </section>
         </div>
