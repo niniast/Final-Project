@@ -4,114 +4,135 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
         <link rel="stylesheet" href="style.css" />
-        <script src="script.js"></script>
     </head>
     <body>
-        <div class="container">
+        <div class="container-fluid">
             <header class="hero">
+                <div class="logo">
+                    Roca <span>.</span>
+                </div>
+                <div class="number_wrapper">
+                    <div class="number">
+                        01
+                    </div>
+                    <div class="number_title">
+                        About me
+                    </div>
+                </div>
                 <div class="hero-text">
                     <h4>Hi, I’ Am</h4>
                     <h1>Nino Sturua</h1>
                     <p>I am Web Developer</p>
-                </div>
-                <div class="social-icons">
-                    <a
-                        href="https://www.facebook.com/nino.sturua.7/"
-                        target="_blank"
-                    >
-                        <img src="fblogo" alt="fb" />
-                    </a>
+                    <div class="social-icons">
+                        <a
+                            href="https://www.facebook.com/nino.sturua.7/"
+                            target="_blank"
+                        >
+                            <img src="images/fb.webp" alt="fb" />
+                        </a>
 
-                    <a
-                        href="https://www.instagram.com/sturuaninia/"
-                        target="_blank"
-                    >
-                        <img src="instalogo" alt="insta" />
-                    </a>
+                        <a
+                            href="https://www.instagram.com/sturuaninia/"
+                            target="_blank"
+                        >
+                            <img src="images/yt.png" alt="insta" />
+                        </a>
+                    </div>
                 </div>
                 <p class="satisfied">
                     <span class="highlight">100%</span> Satisfied Clients
                 </p>
             </header>
+        </div>
+        <div class="container">
             <section>
                 <div class="about-section">
-                    <div class="about-left">
+                    <div class="about-left about_column">
                         <h1>Nino Sturua</h1>
-                        <h3>WEB DEVELOPER</h3>
+                        <h5>WEB DEVELOPER</h5>
+                        <br />
                         <p>
                             I am Nino Sturua a web developer specializing in
                             Front-End technologies. I am passionate about
                             learning HTML, CSS, and JavaScript, aiming to create
                             fully functional and visually appealing websites.
                         </p>
+                        <br />
                         <button class="hire-btn">Hire Me</button>
                     </div>
-                    <div class="about-image"></div>
-                    <div class="skills-section">
+                    <div class="about-image about_column">
+                        <img src="images/photo1.jpg">
+                    </div>
+                    <div class="skills-section about_column">
                         <div class="skill">
                             <span>Design (80%)</span>
-                            <div class="progress-bar-fill" data-width="80%">
-                                <div
-                                    class="progress-bar-fill"
-                                    style="width: 80%"
-                                ></div>
+                            <div class="progressbar_wrapper">
+                                <div class="progress-bar-fill" data-width="80%" >
+                                </div>
                             </div>
                         </div>
                         <div class="skill">
                             <span>Photography (65%)</span>
-                            <div class="progress-bar">
-                                <div
-                                    class="progress-bar-fill"
-                                    data-width="80%"
-                                ></div>
+                            <div class="progressbar_wrapper">
+                                <div class="progress-bar-fill" data-width="65%" >
+                                </div>
                             </div>
                         </div>
                         <div class="skill">
                             <span>Marking (50%)</span>
-                            <div class="progress-bar">
-                                <div
-                                    class="progress-bar-fill"
-                                    data-width="80%"
-                                ></div>
+                            <div class="progressbar_wrapper">
+                                <div class="progress-bar-fill" data-width="50%">
+                                </div>
                             </div>
                         </div>
                         <div class="skill">
                             <span>Photoshop (30%)</span>
-                            <div class="progress-bar">
-                                <div class="progress-bar-fill" data-width="80%">
-                                    >
+                            <div class="progressbar_wrapper">
+                                <div class="progress-bar-fill" data-width="30%">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="contact-info">
-                <div class="contact-item">
-                    <div class="icon-circle">
-                        <i class="fas fa-phone-alt"></i>
+        </div>
+        <div class="container-fluid contact-bg">
+            <div class="container">
+                <section class="contact-info">
+                    <div class="contact-item">
+                        <div class="icon-circle">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-txt">
+                            <h3>Phone Number</h3>
+                            <p>598444798</p>
+                        </div>
                     </div>
-                    <h3>Phone Number</h3>
-                    <p>598444798</p>
-                </div>
-                <div class="contact-item">
-                    <div class="icon-circle red">
-                        <i class="fas fa-map-marker-alt"></i>
+                    <div class="contact-item">
+                        <div class="icon-circle red">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-txt">
+                            <h3>User Address</h3>
+                            <p>Georgia, Tbilisi</p>
+                        </div>
                     </div>
-                    <h3>user Address</h3>
-                    <p>georgia Tbilisi</p>
-                </div>
-                <div class="contact-item">
-                    <div class="icon-circle">
-                        <i class="fas fa-envelope"></i>
+                    <div class="contact-item">
+                        <div class="icon-circle">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-txt">
+                            <h3>Email Address</h3>
+                            <p>ninia.sturua14@gmail.com</p>
+                        </div>
                     </div>
-                    <h3>Email Address</h3>
-                    <p>ninia.sturua14@gmail.com</p>
-                </div>
-            </section>
+                </section>
+            </div>
+        </div>
+        <div class="container">
             <section class="services-grid">
                 <div class="service-card">
-                    <i class="fas fa-pen-nib"></i>
+                    <img src="https://www.iconpacks.net/icons/2/free-settings-icon-3110-thumb.png">
                     <h4>Graphics Design</h4>
                     <p>
                         Lorem ipsum dolor amet, consecte adipiscing lit. Sunt
@@ -119,14 +140,7 @@
                     </p>
                 </div>
                 <div class="service-card">
-                    <i class="fas fa-cog"></i>
-                    <h4>Best Service</h4>
-                    <p>
-                        Lorem ipsum dolor amet, consecte adipiscing lit. Sunt
-                        sed do possimus magm maiores. Ipsa dolor
-                    </p>
-                </div>
-                <div class="service-card active">
+                    <img src="https://www.iconpacks.net/icons/2/free-settings-icon-3110-thumb.png">
                     <h4>Best Service</h4>
                     <p>
                         Lorem ipsum dolor amet, consecte adipiscing lit. Sunt
@@ -134,7 +148,15 @@
                     </p>
                 </div>
                 <div class="service-card">
-                    <i class="fas fa-crosshairs"></i>
+                    <img src="https://www.iconpacks.net/icons/2/free-settings-icon-3110-thumb.png">
+                    <h4>Best Service</h4>
+                    <p>
+                        Lorem ipsum dolor amet, consecte adipiscing lit. Sunt
+                        sed do possimus magm maiores. Ipsa dolor
+                    </p>
+                </div>
+                <div class="service-card">
+                    <img src="https://www.iconpacks.net/icons/2/free-settings-icon-3110-thumb.png">
                     <h4>Pixel Perfect</h4>
                     <p>
                         Lorem ipsum dolor amet, consecte adipiscing lit. Sunt
@@ -142,7 +164,7 @@
                     </p>
                 </div>
                 <div class="service-card">
-                    <i class="fas fa-lightbulb"></i>
+                    <img src="https://www.iconpacks.net/icons/2/free-settings-icon-3110-thumb.png">
                     <h4>Unique Ideas</h4>
                     <p>
                         Lorem ipsum dolor amet, consecte adipiscing lit. Sunt
@@ -150,7 +172,7 @@
                     </p>
                 </div>
                 <div class="service-card">
-                    <i class="fas fa-chart-line"></i>
+                    <img src="https://www.iconpacks.net/icons/2/free-settings-icon-3110-thumb.png">
                     <h4>Design Analysis</h4>
                     <p>
                         Lorem ipsum dolor amet, consecte adipiscing lit. Sunt
@@ -158,7 +180,7 @@
                     </p>
                 </div>
                 <div class="service-card">
-                    <i class="fas fa-tasks"></i>
+                    <img src="https://www.iconpacks.net/icons/2/free-settings-icon-3110-thumb.png">
                     <h4>Fully Managed</h4>
                     <p>
                         Lorem ipsum dolor amet, consecte adipiscing lit. Sunt
@@ -166,7 +188,7 @@
                     </p>
                 </div>
                 <div class="service-card">
-                    <i class="fas fa-life-ring"></i>
+                    <img src="https://www.iconpacks.net/icons/2/free-settings-icon-3110-thumb.png">
                     <h4>Helpful Support</h4>
                     <p>
                         Lorem ipsum dolor amet, consecte adipiscing lit. Sunt
@@ -174,16 +196,20 @@
                     </p>
                 </div>
             </section>
+        </div>
+        <div class="container-fluid">
             <section class="testimonial-section">
                 <div class="testimonial-content">
                     <p class="testimonial-quote">
                         Excepteur sint occaecat cupidatat non proident, sunt in
                         culpa qui officia deserunt mollit anim id est laborum.
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                        sed do eiusmod tempor incididunt ut labore.
+                        sed do eiusmod tempor incididunt.
                     </p>
-                    <div class="testimonial-person">
+                    <div class="circle-photo-wrapper">
                         <div class="circle-photo"></div>
+                    </div>
+                    <div class="testimonial-person">
                         <div class="person-info">
                             <span class="position">Graphic Designer</span>
                             <h3>Mau Thomas</h3>
@@ -191,6 +217,8 @@
                     </div>
                 </div>
             </section>
+        </div>
+        <div class="container">
             <section class="projects">
                 <h2>Latest Projects</h2>
                 <div class="projects-container">
@@ -205,72 +233,28 @@
                     </ul>
                     <div class="projects-grid">
                         <div class="project-box">
-                            <div class="overlay">
-                                <p>9 MONTHS AGO</p>
-                                <h3>3D Mockup Design</h3>
-                            </div>
+                            <p>9 MONTHS AGO</p>
+                            <h3>3D Mockup Design</h3>
                         </div>
                         <div class="project-box">
-                            <div class="overlay">
-                                <p>7 MONTHS AGO</p>
-                                <h3>App UI Concept</h3>
-                            </div>
+                            <p>7 MONTHS AGO</p>
+                            <h3>App UI Concept</h3>
                         </div>
                         <div class="project-box">
-                            <div class="overlay">
-                                <p>6 MONTHS AGO</p>
-                                <h3>Website Template</h3>
-                            </div>
+                            <p>6 MONTHS AGO</p>
+                            <h3>Website Template</h3>
                         </div>
                         <div class="project-box">
-                            <div class="overlay">
-                                <p>5 MONTHS AGO</p>
-                                <h3>Creative Logo</h3>
-                            </div>
+                            <p>5 MONTHS AGO</p>
+                            <h3>Creative Logo</h3>
                         </div>
                         <div class="project-box">
-                            <div class="overlay">
-                                <p>4 MONTHS AGO</p>
-                                <h3>PSD Presentation</h3>
-                            </div>
+                            <p>4 MONTHS AGO</p>
+                            <h3>PSD Presentation</h3>
                         </div>
                         <div class="project-box">
-                            <div class="overlay">
-                                <p>2 MONTHS AGO</p>
-                                <h3>3D Icon Set</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div class="timeline">
-                    <div class="section">
-                        <div class="year">2011 - 2</div>
-                        <div class="content">
-                            <h5>IN FREELANCING COMPANY</h5>
-                            <h2>Graphic Designer</h2>
-                            <p>
-                                Excepteur sint occaecat cupidatat non proident,
-                                sunt in culpa qui officia deserunt mollit anim
-                                id est laborum.
-                            </p>
-                            <a href="#">READ MORE</a>
-                            <div class="label">300S</div>
-                        </div>
-                        <div class="section alt">
-                            <div class="year">201</div>
-                            <div class="content">
-                                <div class="icon">&#128187;</div>
-                                <h5>IN FREELANCING COMPANY</h5>
-                                <h2>Application Design</h2>
-                                <p>
-                                    Excepteur sint occaecat cupidatat non
-                                    proident, sunt in culpa qui officia deserunt
-                                    mollit anim id est laborum.
-                                </p>
-                                <a href="#">READ MORE</a>
-                            </div>
+                            <p>2 MONTHS AGO</p>
+                            <h3>3D Icon Set</h3>
                         </div>
                     </div>
                 </div>
@@ -279,19 +263,55 @@
                 <p class="subheading">NEWS & EVENT</p>
                 <h1 class="title">Rosa Team</h1>
                 <div class="client-grid">
-                    <div class="client"></div>
-                    <div class="client client-text">
-                        <h4>CLIENT 2</h4>
-                        <p>
-                            Lorem ipsum dolor amet consectetur maiores. Ipsa
-                            dolor sit magnam maiores.
-                        </p>
+                    <div class="client">
+                        <div class="client-text" style="display:none;">
+                            <h4>CLIENT 2</h4>
+                            <p>
+                                Lorem ipsum dolor amet consectetur maiores. Ipsa
+                                dolor sit magnam maiores.
+                            </p>
+                        </div>
                     </div>
-                    <div class="client"></div>
-                    <div class="client"></div>
-                    <div class="client"></div>
+                    <div class="client">
+                        <div class="client-text" style="display:none;">
+                            <h4>CLIENT 2</h4>
+                            <p>
+                                Lorem ipsum dolor amet consectetur maiores. Ipsa
+                                dolor sit magnam maiores.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="client">
+                        <div class="client-text" style="display:none;">
+                            <h4>CLIENT 2</h4>
+                            <p>
+                                Lorem ipsum dolor amet consectetur maiores. Ipsa
+                                dolor sit magnam maiores.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="client">
+                        <div class="client-text" style="display:none;">
+                            <h4>CLIENT 2</h4>
+                            <p>
+                                Lorem ipsum dolor amet consectetur maiores. Ipsa
+                                dolor sit magnam maiores.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="client">
+                        <div class="client-text" style="display:none;">
+                            <h4>CLIENT 2</h4>
+                            <p>
+                                Lorem ipsum dolor amet consectetur maiores. Ipsa
+                                dolor sit magnam maiores.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </section>
+        </div>
+        <div class="container-fluid">
             <section class="contact-section">
                 <div class="overlay"></div>
                 <div class="contact-content">
@@ -329,5 +349,21 @@
                 </div>
             </section>
         </div>
+        <div class="container-fluid footer_wrapper">
+            <footer>
+                <h1>
+                    Roca<span>.</span>
+                </h1>
+                <center>
+                    <p>
+                        Excepteur sint occaecat cupidatat non prosit amet, consectetur adipiscing elit sed do eiusmod tempo
+                    </p>
+                </center>
+            </footer>
+            <div class="powered">
+                All rights reserved
+            </div>
+        </div>
+        <script src="script.js"></script>
     </body>
 </html>

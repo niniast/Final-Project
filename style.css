@@ -41,9 +41,9 @@ body {
 .hero-text {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 65%;
     transform: translate(-50%, -50%);
-    text-align: center;
+    text-align: left;
     color: #000;
 }
 .hero-text h1 {
@@ -60,7 +60,7 @@ body {
 }
 .social-icons {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     gap: 16px;
     margin-bottom: 40px;
 }
@@ -71,30 +71,30 @@ body {
 .satisfied {
     font-size: 16px;
     font-weight: bold;
-    position: relative;
-    display: inline-block;
+    position: absolute;
+    bottom:40px;
+    right:80px;
     color: #333;
+    height:30px;
+    border-bottom:3px solid #d72660;
 }
 .satisfied .highlight {
     color: #d72660;
 }
-.satisfied::after {
-    content: "";
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background-color: #d72660;
-} /* აქ მთავრდება 1 დივი */
 .about-section {
     display: flex;
+     align-items: stretch;
+     flex-wrap: wrap;
     justify-content: space-between;
     padding: 50px;
     background: rgb(254, 252, 252);
 }
 .about-left {
-    width: 40%;
+    text-align: right;
+}
+.about_column{
+     flex: 1;         
+     padding:40px;
 }
 .hire-btn {
     background-color: #f8495f;
@@ -109,7 +109,6 @@ body {
     background-image: url("images/n1.jpg");
     background-size: cover;
     background-position: center;
-    height: 300px;
 }
 .skills-section {
     width: 25%;
@@ -127,20 +126,26 @@ body {
 }
 
 .progress-bar-fill {
-    height: 100%;
-    width: 0%; /* საწყისი სიგანე */
+    height: 5px;
+    width: 0%;
     background-color: #f43f5e;
     transition: width 1s ease-in-out;
 }
 
 .skill span {
     color: #f8495f;
+    font-weight: bold;
+}
+.progressbar_wrapper{
+    margin-top:7px;
+    width:100%; 
+    background:#acacac;
 }
 .about-left h1 {
     font-size: 28px;
     font-weight: bold;
 }
-.about-left h3 {
+.about-left h5 {
     color: orange;
     font-weight: 500;
 }
@@ -149,24 +154,27 @@ body {
     line-height: 1.6;
 }
 .skill {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
-.skill span {
-    font-weight: bold;
-}
 /*აქ მთავრდება მეორე დივი */
+.contact-bg{
+    background-color: #0d1436;
+}
 .contact-info {
     display: flex;
     justify-content: space-around;
-    background-color: #0d1436;
+    
     color: white;
     padding: 50px 0;
-    text-align: center;
 }
-
+.contact-txt{
+    text-align: left;
+    padding-left:15px;
+}
 .contact-item {
     max-width: 250px;
+    display: flex;
 }
 .icon-circle {
     width: 60px;
@@ -174,9 +182,6 @@ body {
     border: 2px dashed white;
     border-radius: 50%;
     margin: 0 auto 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-size: 20px;
 }
 .icon-circle.red {
@@ -199,7 +204,6 @@ body {
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     padding: 50px;
-    background-color: #f5f5f5;
 }
 .service-card {
     background-color: #f5f5f5;
@@ -219,6 +223,14 @@ body {
     margin-bottom: 10px;
     font-size: 16px;
 }
+.service-card img{
+    width:50px;
+    object-fit: contain;
+}
+.service-card h4, .service-card p {
+    display:none;
+}
+
 .service-card.active {
     background-color: #0d1436;
     color: white;
@@ -241,25 +253,37 @@ body {
     max-width: 700px;
     margin: 0 auto;
     opacity: 0.97;
+    display: flex;
 }
 .testimonial-quote {
-    font-size: 16px;
+    font-size: 12px;
     line-height: 1.7;
     color: #ccc;
     margin-bottom: 40px;
+    flex:4;
+    text-align: right;
 }
 .testimonial-person {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex:2;
+}
+.circle-photo-wrapper {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 1px dashed #fff;
+    margin-left: 25px;
+    margin-right: 25px;
+    flex:1;
 }
 .circle-photo {
     width: 100px;
     height: 100px;
-    background-color: #fafafa;
+    margin: 10px 10px 0px 10px;
+    background-color: #B97679;
     border-radius: 50%;
-    border: 2px dashed #fff;
-    margin-bottom: 15px;
 }
 .person-info .position {
     color: #f5546b;
@@ -319,27 +343,20 @@ body {
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
+    gap: 0px;
 }
 .project-box {
     width: 285px;
     height: 360px;
     background-color: #444;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: white;
+    padding-top:70px !important;
 }
-.project-box .overlay {
-    text-align: center;
-}
-.project-box .overlay p {
+.project-box  p {
     font-size: 12px;
-    margin-bottom: 5px;
     color: #ff4a57;
 }
-.project-box .overlay h3 {
+.project-box h3 {
     margin: 0;
     font-size: 16px;
 }
@@ -434,7 +451,7 @@ body {
 .client-grid {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 130px;
     flex-wrap: wrap;
 }
 .client {
@@ -462,7 +479,7 @@ body {
 }
 .contact-section {
     position: relative;
-    background-image: url("https://i.imgur.com/Uz4QXhW.png"); /* Map placeholder */
+    background-image: url("https://as1.ftcdn.net/jpg/04/46/61/86/1000_F_446618660_FfPJdWIZkRopmf95fXZgvlvZa9mMasSK.jpg"); /* Map placeholder */
     background-size: cover;
     background-position: center;
     padding: 100px 20px;
@@ -499,9 +516,7 @@ body {
 }
 
 .contact-form {
-    background-color: white;
     padding: 30px;
-    border-radius: 4px;
     text-align: left;
     color: #333;
 }
@@ -548,4 +563,56 @@ button:hover {
 
 button span {
     margin-left: 8px;
+}
+.number_wrapper{
+    position:absolute;
+    right:50px;
+    top:50px;
+}
+.logo{
+    position:absolute;
+    left:50px;
+    top:50px;
+    font-size:50px;
+    font-weight: bold;
+}
+.logo span{
+    color:blue;
+}
+.number_wrapper .number{
+    font-size:100px;
+    font-weight: bold;
+}
+.number_title{
+    width:100%;
+    position: absolute;
+    top:40px;
+    color:#373737;
+    text-align:center;
+    font-weight: bold;
+    font-size:24px;
+}
+footer{
+    text-align: center;
+    padding-top:90px;
+    padding-bottom:30px;
+}
+footer h1 span{
+    color:red;
+}
+.footer_wrapper{
+    background: #282828;
+}
+footer p{
+    margin-top:15px;
+    color:#fff;
+    max-width: 400px;
+    margin-bottom:35px;
+}
+.powered{
+    background-color: #171717;
+    color:#fff;
+    text-align: center;
+    padding-top:25px;
+    padding-bottom:25px;
 }
